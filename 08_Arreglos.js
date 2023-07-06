@@ -24,7 +24,11 @@ tecnologias.splice(1, 1);
 const nuevoArreglo = ["Docker", ...tecnologias, "Python"];
 
 //? Mostrar en consola un arreglo con un callback
-
+//* Filter es para crear un arreglo a partir de otro arreglo
+//*  Este método recorre cada elemento del arreglo original
+//*  y ejecuta una función de prueba (callback) en cada uno de ellos.
+// $ Si es TRUE en un elemento en particular: el elemento se incluye en el arreglo
+//$ Si es un FALSE en un elemento en particular: el elemento no se incluye en el arreglo
 tecnologias.filter(function (tech) {
   console.log("Callback: " + tech);
 });
