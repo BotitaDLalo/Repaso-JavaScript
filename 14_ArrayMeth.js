@@ -24,7 +24,31 @@ resultado = numeros.find((numero) => numero === 10);
 resultado = numeros.every((numero) => numero < 33);
 
 //? Reduce
-resultado = numeros.reduce((total, numero) => numero + total, 0);
+//* Reduce un arreglo hasta un solo valor
+//* Donde:
+/**
+*$ "array": 
+Es la matriz en la que se aplicará el método reduce.
 
+*$ "acumulador":
+Es el valor acumulado resultante de la iteración anterior. 
+En la primera iteración, si se proporciona un "valorInicial", será igual a ese valor. 
+De lo contrario, será igual al primer elemento de la matriz.
+
+*$"elementoActual": 
+Es el elemento actual que se está procesando en la matriz.
+
+*$"índiceActual" (opcional):
+Es el índice del elemento actual en la matriz.
+
+*$"arreglo" (opcional):
+Es la matriz original sobre la cual se está aplicando "reduce".
+
+*$ "valorInicial" (opcional):
+Es el valor inicial del acumulador. Si no se proporciona, 
+el primer elemento de la matriz se tomará como valor inicial.
+ */
+
+resultado = numeros.reduce((total, numero) => numero + total);
 
 console.log(resultado);
